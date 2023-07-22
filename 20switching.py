@@ -84,6 +84,7 @@ def lenof(a):
 print(lenof([1,2,2,3,4,5]))
 #output
 # 6
+
 def dup(lis1):
     b=[]
     for i in lis1:
