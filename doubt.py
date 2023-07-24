@@ -3,5 +3,9 @@ d ={
     'b': '2',
     'c': '3',
 }
-top = 'a'
-print("\n",d.keys(),"\n\n",d.values(),"\n\n",d.items(),"\n\n",d,"\n\n")
+# top = 'a'
+# print("\n",d.keys(),"\n\n",d.values(),"\n\n",d.items(),"\n\n",d,"\n\n")
+class a():
+    pass
+b= a()
+print(a())
