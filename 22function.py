@@ -36,14 +36,15 @@
 # # num2 == my
 # # num3 == dear
 
-# def fun(**name):
-#     for key,value in name.items():
-#         print(key,value) 
-# fun(num1="hi",num2="my",num3="dear")
-# # output:
-# # num1 hi
-# # num2 my
-# # num3 dear
+def fun(**name):
+    for key,value in name.items():
+        print(key,value) 
+        
+fun(num1="hi",num2="my",num3="dear")
+# output:
+# num1 hi
+# num2 my
+# num3 dear
 
 # def fun1():
 #     s="hi ansiya"

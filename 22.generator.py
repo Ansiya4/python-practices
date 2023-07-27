@@ -48,23 +48,23 @@
 # # 2
 # # 3
 
-# # function to print even numbers
-# def simpleGeneratorFun():
-#     for i in range(10):
-# 	    if i%2==0:
-# 		    yield i
-# v=simpleGeneratorFun()
-# while True:
-# 	try:
-# 		print(next(v))
-# 	except StopIteration:
-# 		break
-# # output
-# # 0
-# # 2
-# # 4
-# # 6
-# # 8
+# function to print even numbers
+def simpleGeneratorFun(l):
+    for i in range(l):
+	    if i%2==0:
+		    yield i
+v=simpleGeneratorFun(10)
+while True:
+	try:
+		print(next(v))
+	except StopIteration:
+		break
+# output
+# 0
+# 2
+# 4
+# 6
+# 8
 
 # # Function to print sum of n Natural numbers
 # def simpleGeneratorFun():
@@ -93,5 +93,26 @@
 # for i in generator:
 #     print(i)
 
-generator = [i for i in range(10) if i % 2 == 0]
-print(generator)
+# generator = [i for i in range(10) if i % 2 == 0]
+# print(generator)
+
+
+# def fib(l):
+# 	a = 0
+# 	b = 1
+# 	for i in range(l):
+# 		num = a
+# 		a = a+b
+# 		b = num
+# 		yield num
+
+# limit = fib(10)
+# print(next(limit))
+# print(next(limit))
+# print(next(limit))
+# print(next(limit))
+# print(next(limit))
+# print(next(limit))
+
+# for i in fib(limit):
+# 	print(i)
