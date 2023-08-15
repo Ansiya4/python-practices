@@ -1,17 +1,18 @@
-# def findtype(a,type):
-#     for x in a:
-#         if isinstance(x, type):
-#             print(x)
+def findtype(a,type):
+    for x in a:
+        if isinstance(x, type):
+            print(x)
 
-# listtype= ['ansiya', 'rizana', 'nasrudeen','abhijith', 23, 56, 2.5, 7, 88.5555]
+listtype= ['ansiya', 'rizana', 'nasrudeen','abhijith', 23, 56, 2.5, 7, 88.5555]
 # findtype(listtype,int)
+print([x for x in listtype if isinstance(x, str)] )
 
 # b = "malayalam"
 # if b == b[::-1] :
 #     print('palindrome')
 # else:
 #     print("not palindrome")
-
+# print("pali" if b == b[::-1] else "not pali")
 # def pali(x):
 #     if x == x[::-1] :
 #         print('palindrome')
@@ -19,22 +20,27 @@
 #         print("not palindrome")
 # pali("0000")
 
-# def numsum(number):
-#     total = (number*(number+1))/2
-#     print("total:", total)
-# numsum(20)
+def numsum(number):
+    total = (number*(number+1))/2
+    print("total:", total)
+numsum(20)
+# def tsum(x,y):
+#      return (y-x+1)*(x+y)/2
+# print(tsum(20,30))
+# sum =0
+# for i in range(20,30+1):
+#      print(i)
+# print(sum)
 
 def uniq(num):
-    num2=[None]
-    k=0
+    num2=[]
     for i in num:
         if i not in num2:
-            num2[k] = i
-            k = k+1
-    print(num2)
+           num2.append(i)
+    print(num2[4])
 list1=[1,2,1,2,3,4,5,6,3]
 uniq(list1)
-# print("using set",list(set(list1)))
+# # print("using set",list(set(list1)))
 
 # def uniq(num):
 #     num2 = [i for index, i in enumerate(num) if i not in num[:index]]
@@ -130,3 +136,6 @@ uniq(list1)
 # # output
 # # ['apple', 'orange', 'cherry', 'kiwi', 'mango']
 
+total_sum = sum(num for num in range(200, 301))
+print("Sum between 200 and 300:", total_sum)
+print(sum (num for num in range(10,20)))

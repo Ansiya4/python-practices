@@ -11,6 +11,8 @@ di={
     }
 l1 = ["one", "two", "three", "four"]
 l2 = [1,7,1,2,3,4,2,1,4,5,6,1]
+print(set(l2))
+
 t1 = (1,2,3,4)
 dic ={'one': 1, 'two': 2, 'three': 3, 'four': 4}
 d = {str(key):value for key, value in zip(l1,t1)}

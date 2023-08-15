@@ -10,6 +10,7 @@ new = A()
 new.name = "ansiya"
 new.age=11
 print(new.name,new.age)
+
 # del new
 # print(new)
 

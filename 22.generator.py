@@ -5,19 +5,19 @@
 # # 2 second time and 3 third time
 
 
-# def simpleGeneratorFun():
-# 	yield 1
-# 	yield 2
-# 	yield 3
+def simpleGeneratorFun():
+	yield 1
+	yield 2
+	yield 3
 
-# v=simpleGeneratorFun()
-# print(next(v))
-# print(next(v))
-# print(next(v))
-# # output
-# # 1
-# # 2
-# # 3
+v=simpleGeneratorFun()
+print(next(v))
+print(next(v))
+print(next(v))
+# output
+# 1
+# 2
+# 3
 
 # def simpleGeneratorFun():
 # 	yield 1
@@ -97,16 +97,16 @@ while True:
 # print(generator)
 
 
-# def fib(l):
-# 	a = 0
-# 	b = 1
-# 	for i in range(l):
-# 		num = a
-# 		a = a+b
-# 		b = num
-# 		yield num
+def fib(l):
+	a = 0
+	b = 1
+	for i in range(l):
+		num = a
+		a = a+b
+		b = num
+		yield num
 
-# limit = fib(10)
+limit = fib(10)
 # print(next(limit))
 # print(next(limit))
 # print(next(limit))

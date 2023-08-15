@@ -1,6 +1,6 @@
 # def div(a,b):
 #     # try:
-#     #     res =a/b
+#     #     res = a/b
 #     # except:
 #     #     print("divition by zero not possible")
 #     #     res= None
